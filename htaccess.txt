@@ -1,0 +1,7 @@
+| -- directory1
+| -- directory2
+| -- directory3
+|    | -- directory3/childdirectory1
+|    | -- directory3/childdirectory2
+| -- .htaccess
+| -- index.html
