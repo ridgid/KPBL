@@ -44,19 +44,19 @@
         <img class="img-fluid mb-1 d-block mx-auto" src="" alt="">
 <form>
   <div class="form-group">
-    <label for="exampleInputEmail1">Nama depan</label>
+    <label for="exampleInputEmail1">Nama depan *</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
-    <label for="exampleInputEmail1">Nama belakang</label>
+    <label for="exampleInputEmail1">Nama belakang *</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
-    <label for="exampleInputEmail1">Nama pengguna</label>
+    <label for="exampleInputEmail1">Nama pengguna*</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
       <div class="form-group">
-    <label for="exampleInputPassword1">Kata sandi</label>
+    <label for="exampleInputPassword1">Kata sandi*</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Kata sandi">
   </div>
 
     <div class="form-group">
-      <label for="inputState">Zona</label>
+      <label for="inputState">Zona*</label>
       <select id="inputState" class="form-control">
         <option selected></option>
         <option>Jawa</option>
@@ -65,16 +65,21 @@
         <option>Papua</option>
         <option>Kalimantan</option>
       </select>
-    </div>
-    <div class="form-group">
-  <label for="sel1">Jenis akun:</label>
-   <select class="form-control" id="sel1">
-    <option selected> </option>
-    <option>Capeng</option>
-    <option>WO</option>
-  </select>
-  </div>
-    <label for="exampleInputPassword1">E-mail</label>
+    <label for="exampleInputEmail1">Jenis akun</label> 
+<div>
+    <label class="custom-control custom-radio">
+  <input id="radio1" name="radio" type="radio" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Pria</span>
+</label>
+<label class="custom-control custom-radio">
+  <input id="radio2" name="radio" type="radio" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Wanita</span>
+</label>
+</div>
+
+    <label for="exampleInputPassword1">E-mail*</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="asd@yahoo.co.id">
     <label for="exampleInputEmail1">Jenis kelamin</label> 
     <div>
@@ -89,16 +94,16 @@
   <span class="custom-control-description">Wanita</span>
 </label>
 </div>
-    <label for="exampleInputEmail1">Tgl lahir</label>
+    <label for="exampleInputEmail1">Tgl lahir*</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="17/8/1945">
  <div class="form-group">
-  <label for="comment">Alamat</label>
+  <label for="comment">Alamat*</label>
   <textarea class="form-control" rows="5" id="comment" placeholder="Jl. taman suropati no 7"></textarea>
 </div> 
 
 
         <h2 class="font-weight-light mb-0"><div class="text-center mt-4">
-          <a class="btn btn-xl btn-outline-light" href="index.html">
+          <a class="btn btn-xl btn-outline-light" data-toggle="modal" data-target="#myModal">
             <i class="fa fa-address-book-o mr-2"></i>
             Daftar
 
@@ -110,7 +115,28 @@
       </div>
     </header>
 
-  
+
+     <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+
+Berhasil
+        </div>
+        </div>
+        <div class="modal-content">
+        <button type="button" onclick="window.location.href='index.html'" data-dismiss="modal">Kembali</button>
+    </div>
+
+      </div>
+      
+    </div>
+  </div>
+
+
 
     <div class="copyright py-4 text-center text-white">
       <div class="container">
